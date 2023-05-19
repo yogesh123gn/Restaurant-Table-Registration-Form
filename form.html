@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" author="Yogesh Nanavare">
+    <link rel="stylesheet" href="styles.css">
+    <title>Table Reservation Form</title>
+
+
+    <!-- Font Style Link -->
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="bg">
+
+
+
+
+  <h2>Restaurant Reservation Form</h2>
+
+
+  <form id="booking-form" method="post" action="#">
+
+  <table>
+    <tr>
+      <td>
+        <div class="main">
+        <label for="name">Name</label>
+        <input type="text" id="fname" name="fname" placeholder="First" required>
+        </div>
+      </td>
+      <td>
+        <div class="main">
+          <br>
+          <input type="text" id="lname" name="lname" placeholder="Last" required>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>
+        <div class="main">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </td>
+      <td>
+        <div class="main">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="### ### ####" required>
+        </div>
+      </td>
+    </tr>
+   </table>
+
+  <table>
+    <tr>
+      <td>
+        <div class="main">
+          <label for="date">Reservation Date</label>
+          <input type="date" id="date" name="date" placeholder="DD/MM/YYYY" min="2023-04-20" required>
+        </div>
+      </td>
+      <td>
+        <div class="main">
+          <label for="time">Reservation Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>
+        <div class="main">
+          <label for="guests">Number of guests</label>
+          <input type="number" id="guests" name="guests" min="1" max="10" required />
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <label for="notes">Special Requests</label>
+  <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+
+  <input type="submit" value="Submit">
+</form>
+
+
+
+  </body>
+</html>
